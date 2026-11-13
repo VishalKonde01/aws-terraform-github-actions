@@ -1,5 +1,5 @@
 module "aws_vpc" {
-  source = "../../../../modules/Network"
+  source = "../../../../Modules/Network"
 
   #################################################
   # ENVIRONMENT
