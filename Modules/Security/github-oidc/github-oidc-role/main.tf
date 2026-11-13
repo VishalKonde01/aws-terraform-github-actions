@@ -11,11 +11,11 @@ resource "aws_iam_role" "this" {
     "${path.module}/templates/trust-policy.json.tpl",
 
     {
-      oidc_provider_arn  = var.oidc_provider_arn
-      github_owner       = var.github_owner
-      github_repository  = var.github_repository
-      github_branch      = var.github_branch
-      github_environment = var.github_environment
+      oidc_provider_arn    = var.oidc_provider_arn
+      github_owner         = var.github_owner
+      github_repository    = var.github_repository
+      github_branch        = var.github_branch
+      github_environment   = var.github_environment
       github_owner_id      = var.github_owner_id
       github_repository_id = var.github_repository_id
     }

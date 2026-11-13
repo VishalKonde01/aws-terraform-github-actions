@@ -20,7 +20,7 @@ resource "aws_nat_gateway" "nat" {
 
   subnet_id = var.public_subnet_ids[count.index]
 
-  
+
 
   tags = merge(
     var.common_tags,

@@ -8,7 +8,7 @@ data "terraform_remote_state" "dns" {
 
   config = {
 
-     bucket = "terraform-backend-bucket-vishal"
+    bucket = "terraform-backend-bucket-vishal"
     key    = "global/dns/terraform.tfstate"
     region = "ap-south-1"
   }
