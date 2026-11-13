@@ -1,4 +1,4 @@
-name: Space9 DNS | Amazon Route53 
+name: vishalk.online DNS | Amazon Route53 
 
 on:
   workflow_dispatch:
