@@ -3,6 +3,7 @@
   "Version": "2012-10-17",
   "Statement": [
     {
+      "Sid": "GitHubActionsAssumeRole",
       "Effect": "Allow",
       "Principal": {
         "Federated": "${oidc_provider_arn}"
@@ -11,7 +12,7 @@
       "Condition": {
         "StringEquals": {
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
-          "token.actions.githubusercontent.com:sub": "repo:${github_owner}/${github_repository}:environment:${github_environment}"
+          "token.actions.githubusercontent.com:sub": "repo:${github_owner}@${github_owner_id}/${github_repository}@${github_repository_id}:environment:${github_environment}"
         }
       }
     }

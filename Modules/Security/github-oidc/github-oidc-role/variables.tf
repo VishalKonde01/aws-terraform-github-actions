@@ -121,3 +121,14 @@ variable "github_environment" {
   type = string
 
 }
+
+
+variable "github_owner_id" {
+  description = "GitHub owner immutable ID"
+  type        = string
+}
+
+variable "github_repository_id" {
+  description = "GitHub repository immutable ID"
+  type        = string
+}

@@ -48,6 +48,9 @@ module "terraform_role" {
 
   policy_template_file = "../../../../Modules/Security/github-oidc/github-oidc-role/templates/terraform-policy.json"
 
+  github_owner_id      = "157500722"
+  github_repository_id = "1456402614"
+
   backend_branch   = var.backend_branch
   terraform_branch = var.terraform_branch
   frontend_branch  = var.frontend_branch
@@ -81,6 +84,9 @@ module "frontend_role" {
   terraform_branch = var.terraform_branch
   frontend_branch  = var.frontend_branch
 
+  github_owner_id      = "157500722"
+  github_repository_id = "1456402614"
+
   github_branch = var.github_branch
 
   github_environment = var.github_environment
@@ -112,7 +118,10 @@ module "backend_role" {
   terraform_branch = var.terraform_branch
   frontend_branch  = var.frontend_branch
 
-  github_branch = var.github_branch
+
+  github_owner_id      = "157500722"
+  github_repository_id = "1456402614"
+  github_branch        = var.github_branch
 
   github_environment = var.github_environment
 }
