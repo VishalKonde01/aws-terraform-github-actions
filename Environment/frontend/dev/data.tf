@@ -28,7 +28,7 @@ data "terraform_remote_state" "acm_global" {
 
   config = {
 
-   bucket = "terraform-backend-bucket-vishal"
+    bucket = "terraform-backend-bucket-vishal"
     key    = "global/acm-global/terraform.tfstate"
     region = "ap-south-1"
   }
