@@ -4,7 +4,7 @@ environment = "dev"
 
 project_name = "aws-terraform-github-actions"
 
-bucket_name = "Static-Website-Hosting-Frontend"
+bucket_name = "static-website-hosting-frontend-vishalk-2026"
 
 frontend_domain = "dev.vishalk.online"
 
